@@ -2,6 +2,9 @@ import { Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import { useMediaQuery } from './hooks/useMediaQuery';
 import { SMALL_DESKTOP_WIDTH, LARGE_DESKTOP_WIDTH } from './constants';
+import Nav from './components/Nav';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
 
@@ -19,8 +22,11 @@ function App() {
       <div style={{
         width: determineWidth(),
       }}>
+        <Nav/>
         <Routes>
           <Route path='/' element={<About/>}/>
+          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </div>
     </main>
