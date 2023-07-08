@@ -18,7 +18,7 @@ function App() {
   }
 
   return (
-    <main className='p-4 lg:flex lg:justify-center' style={{
+    <main className={`p-4 lg:flex lg:justify-center ${isLargeDesktop && "pt-8"}`} style={{
       backgroundColor: BACKGROUND_COLOR,
     }}>
       <div style={{
