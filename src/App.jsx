@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import { useMediaQuery } from './hooks/useMediaQuery';
 import { SMALL_DESKTOP_WIDTH, LARGE_DESKTOP_WIDTH, BACKGROUND_COLOR } from './constants';
-import Nav from './components/Nav';
+import MainNav from './components/MainNav';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
@@ -24,7 +24,7 @@ function App() {
       <div style={{
         width: determineWidth(),
       }}>
-        <Nav/>
+        <MainNav/>
         <Routes>
           <Route path='/' element={<About/>}/>
           <Route path='/projects' element={<Projects/>}/>

@@ -4,9 +4,11 @@ import { AiFillHome, AiOutlineHome } from "react-icons/ai";
 import { HiBriefcase, HiOutlineBriefcase } from "react-icons/hi";
 import { BiUserCircle, BiSolidUserCircle } from "react-icons/bi";
 import { COMPONENT_COLOR, DARKER_TEXT_COLOR } from '../constants';
+import MainNavLink from './MainNavLink';
 
-const Nav = () => {
+const MainNav = () => {
 
+    // Warning: Received `true` for a non-boolean attribute
     const location = useLocation();
     const isAboutPage = location?.pathname === "/";
     const isProjectsPage = location?.pathname === "/projects";
@@ -14,20 +16,20 @@ const Nav = () => {
 
   return (
     <nav className='flex rounded-lg' style={{ backgroundColor: COMPONENT_COLOR, color: DARKER_TEXT_COLOR, }}>
-        <Link to="/" className={`w-1/3 pt-4 rounded-l-lg hover:bg-purple-600 hover:text-white ${isAboutPage && "border-b-4 border-purple-600"}`}>
+        <MainNavLink to="/" isActive={isAboutPage} position="left">
             <div className='flex justify-center'>{isAboutPage ? <AiFillHome fontSize="20px"/> : <AiOutlineHome fontSize="20px"/>}</div>
             <p className='text-center my-2 font-semibold text-sm'>About</p>
-        </Link>
-        <Link to="/projects" className={`w-1/3 pt-4 hover:bg-purple-600 hover:text-white ${isProjectsPage && "border-b-4 border-purple-600"}`}>
+        </MainNavLink>
+        <MainNavLink to="/projects" isActive={isProjectsPage}>
             <div className='flex justify-center'>{isProjectsPage ? <HiBriefcase fontSize="20px"/> : <HiOutlineBriefcase fontSize="20px"/>}</div>
             <p className='text-center my-2 font-semibold text-sm'>Projects</p>
-        </Link>
-        <Link to="/contact" className={`w-1/3 pt-4 rounded-r-lg hover:bg-purple-600 hover:text-white ${isContactPage && "border-b-4 border-purple-600"}`}>
+        </MainNavLink>
+        <MainNavLink to="/contact" isActive={isContactPage} position="right">
             <div className='flex justify-center'>{isContactPage ? <BiSolidUserCircle fontSize="20px"/> : <BiUserCircle fontSize="20px"/>}</div>
             <p className='text-center my-2 font-semibold text-sm'>Contact</p>
-        </Link>
+        </MainNavLink>
     </nav>
   )
 }
 
-export default Nav
+export default MainNav
