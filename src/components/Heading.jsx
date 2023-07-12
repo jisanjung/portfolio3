@@ -15,10 +15,10 @@ const Heading = ({ text }) => {
 
   return (
     <div>
-        <h1 style={{ color: DARKER_TEXT_COLOR, fontSize: determineTextSize() }} className='font-extrabold mb-3'>
+        <h1 style={{ color: DARKER_TEXT_COLOR, fontSize: determineTextSize() }} className='font-extrabold mb-3 leading-10'>
             {text}
         </h1>
-        <hr className='w-10 h-1 bg-purple-600'></hr>
+        <hr className='w-10 lg:w-12 h-1 bg-purple-600'></hr>
     </div>
   )
 }
