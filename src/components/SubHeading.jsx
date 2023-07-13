@@ -14,7 +14,7 @@ const SubHeading = ({ text, className }) => {
     }
 
   return (
-    <h3 className={`font-semibold tracking-tight ${className}`} 
+    <h3 className={`font-semibold tracking-tight md:w-3/4 ${className}`} 
     style={{
         color: DARKER_TEXT_COLOR,
         fontSize: determineTextSize(),

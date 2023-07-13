@@ -15,7 +15,7 @@ const Heading = ({ text }) => {
 
   return (
     <div>
-        <h1 style={{ lineHeight: "1.25", color: DARKER_TEXT_COLOR, fontSize: determineTextSize() }} className='font-extrabold mb-3'>
+        <h1 style={{ lineHeight: "1.25", color: DARKER_TEXT_COLOR, fontSize: determineTextSize() }} className='font-extrabold mb-3 md:w-5/6'>
             {text}
         </h1>
         <hr className='w-10 lg:w-12 h-1 bg-purple-600'></hr>

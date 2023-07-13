@@ -15,7 +15,7 @@ const MainNav = () => {
     const isContactPage = location?.pathname === "/contact";
 
   return (
-    <nav className='flex rounded-lg mb-8' style={{ backgroundColor: COMPONENT_COLOR, color: DARKER_TEXT_COLOR, }}>
+    <nav className='flex rounded-lg mb-8 md:mb-10 lg:mb-12' style={{ backgroundColor: COMPONENT_COLOR, color: DARKER_TEXT_COLOR, }}>
         <MainNavLink to="/" isActive={isAboutPage} position="left">
             <div className='flex justify-center'>{isAboutPage ? <AiFillHome fontSize="20px"/> : <AiOutlineHome fontSize="20px"/>}</div>
             <p className='text-center my-2 font-semibold text-sm'>About</p>
