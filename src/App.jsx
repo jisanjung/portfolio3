@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 function App() {
 
   const isSmallDesktop = useMediaQuery("(min-width: 1024px)");
-  const isLargeDesktop = useMediaQuery("(min-width: 1440px)");
+  const isLargeDesktop = useMediaQuery("(min-width: 1279px)");
 
   const determineWidth = () => {
     if (isLargeDesktop) return LARGE_DESKTOP_WIDTH;

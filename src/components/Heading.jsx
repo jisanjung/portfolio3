@@ -5,7 +5,7 @@ import { useMediaQuery } from '../hooks/useMediaQuery'
 const Heading = ({ text }) => {
 
     const isSmallDesktop = useMediaQuery("(min-width: 1024px)");
-    const isLargeDesktop = useMediaQuery("(min-width: 1440px)");
+    const isLargeDesktop = useMediaQuery("(min-width: 1279px)");
 
     const determineTextSize = () => {
         if (isLargeDesktop) return "48px";
@@ -15,7 +15,7 @@ const Heading = ({ text }) => {
 
   return (
     <div>
-        <h1 style={{ color: DARKER_TEXT_COLOR, fontSize: determineTextSize() }} className='font-extrabold mb-3 leading-10'>
+        <h1 style={{ lineHeight: "1.25", color: DARKER_TEXT_COLOR, fontSize: determineTextSize() }} className='font-extrabold mb-3'>
             {text}
         </h1>
         <hr className='w-10 lg:w-12 h-1 bg-purple-600'></hr>

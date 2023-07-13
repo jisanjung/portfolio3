@@ -2,10 +2,10 @@ import React from 'react'
 import { DARKER_TEXT_COLOR } from '../constants';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 
-const SubHeading = ({ text }) => {
+const SubHeading = ({ text, className }) => {
 
     const isSmallDesktop = useMediaQuery("(min-width: 1024px)");
-    const isLargeDesktop = useMediaQuery("(min-width: 1440px)");
+    const isLargeDesktop = useMediaQuery("(min-width: 1279px)");
 
     const determineTextSize = () => {
         if (isLargeDesktop) return "27px";
@@ -14,7 +14,7 @@ const SubHeading = ({ text }) => {
     }
 
   return (
-    <h3 className='font-semibold tracking-tight my-6' 
+    <h3 className={`font-semibold tracking-tight ${className}`} 
     style={{
         color: DARKER_TEXT_COLOR,
         fontSize: determineTextSize(),
