@@ -17,15 +17,15 @@ const MainNav = () => {
   return (
     <nav className='flex rounded-lg mb-8 md:mb-10 lg:mb-12' style={{ backgroundColor: COMPONENT_COLOR, color: DARKER_TEXT_COLOR, }}>
         <MainNavLink to="/" isActive={isAboutPage} position="left">
-            <div className='flex justify-center'>{isAboutPage ? <AiFillHome fontSize="20px"/> : <AiOutlineHome fontSize="20px"/>}</div>
+            <div className='flex justify-center'>{isAboutPage ? <AiFillHome fontSize="21px"/> : <AiOutlineHome fontSize="21px"/>}</div>
             <p className='text-center my-2 font-semibold text-sm'>About</p>
         </MainNavLink>
         <MainNavLink to="/projects" isActive={isProjectsPage}>
-            <div className='flex justify-center'>{isProjectsPage ? <HiBriefcase fontSize="20px"/> : <HiOutlineBriefcase fontSize="20px"/>}</div>
+            <div className='flex justify-center'>{isProjectsPage ? <HiBriefcase fontSize="21px"/> : <HiOutlineBriefcase fontSize="21px"/>}</div>
             <p className='text-center my-2 font-semibold text-sm'>Projects</p>
         </MainNavLink>
         <MainNavLink to="/contact" isActive={isContactPage} position="right">
-            <div className='flex justify-center'>{isContactPage ? <BiSolidUserCircle fontSize="20px"/> : <BiUserCircle fontSize="20px"/>}</div>
+            <div className='flex justify-center'>{isContactPage ? <BiSolidUserCircle fontSize="21px"/> : <BiUserCircle fontSize="21px"/>}</div>
             <p className='text-center my-2 font-semibold text-sm'>Contact</p>
         </MainNavLink>
     </nav>
