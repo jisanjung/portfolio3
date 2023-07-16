@@ -4,11 +4,8 @@ import { SiGmail } from "react-icons/si";
   
 const Footer = () => {
 
-    const screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-
   return (
-    <footer className='absolute bottom-0 py-6'>
-        {console.log(screenWidth)}
+    <footer className='absolute bottom-0 left-0 right-0 py-6'>
         <div className='flex justify-center'>
             <FaLinkedinIn/>
             <FaGithub/>
