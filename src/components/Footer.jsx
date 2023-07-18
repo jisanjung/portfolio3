@@ -24,7 +24,7 @@ const Footer = () => {
             }}/>
           </a>
         </div>
-        <p className='text-center text-sm lg:text-base xl:text-lg pt-4' style={{
+        <p className='text-center text-sm lg:text-base 2xl:text-lg pt-4' style={{
           color: PARAGRAPH_COLOR,
         }}>&copy; {new Date().getFullYear()} Jisan Jung</p>
     </footer>
