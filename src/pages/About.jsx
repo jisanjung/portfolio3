@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section>
       <Heading text="Software Engineer, Full Stack Developer, UI Enthusiast"/>
-      <div className='my-6 md:my-8 lg:my-10'>
+      <div className='my-6 lg:my-8 2xl:my-10'>
         <SubHeading text="Hi there I'm Jisan."/>
         <SubHeading text="What I love doing most is solving business problems by implementing simple, friendly user interfaces."/>
       </div>
