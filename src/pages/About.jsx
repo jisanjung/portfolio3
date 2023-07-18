@@ -15,7 +15,7 @@ const About = () => {
       </div>
       <Link to="/experience">
         <Button text="My Experience">
-          <IoMdArrowRoundForward className='text-xl lg:text-2xl xl:text-3xl' style={{
+          <IoMdArrowRoundForward className='text-xl lg:text-2xl 2xl:text-3xl' style={{
             marginTop: "1px",
           }}/>
         </Button>

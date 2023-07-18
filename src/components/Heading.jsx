@@ -1,11 +1,11 @@
 import React from 'react'
-import { DARKER_TEXT_COLOR } from '../constants'
+import { DARKER_TEXT_COLOR, LARGE_DESKTOP_BREAKPOINT, SMALL_DESKTOP_BREAKPOINT } from '../constants'
 import { useMediaQuery } from '../hooks/useMediaQuery'
 
 const Heading = ({ text }) => {
 
-    const isSmallDesktop = useMediaQuery("(min-width: 1024px)");
-    const isLargeDesktop = useMediaQuery("(min-width: 1279px)");
+    const isSmallDesktop = useMediaQuery(`(min-width: ${SMALL_DESKTOP_BREAKPOINT})`);
+    const isLargeDesktop = useMediaQuery(`(min-width: ${LARGE_DESKTOP_BREAKPOINT})`);
 
     const determineTextSize = () => {
         if (isLargeDesktop) return "48px";

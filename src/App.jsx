@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import { useMediaQuery } from './hooks/useMediaQuery';
-import { SMALL_DESKTOP_WIDTH, LARGE_DESKTOP_WIDTH, BACKGROUND_COLOR } from './constants';
+import { SMALL_DESKTOP_CONTAINER, LARGE_DESKTOP_CONTAINER, BACKGROUND_COLOR, SMALL_DESKTOP_BREAKPOINT, LARGE_DESKTOP_BREAKPOINT } from './constants';
 import MainNav from './components/MainNav';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
@@ -10,12 +10,12 @@ import Experience from './pages/Experience';
 
 function App() {
 
-  const isSmallDesktop = useMediaQuery("(min-width: 1024px)");
-  const isLargeDesktop = useMediaQuery("(min-width: 1279px)");
+  const isSmallDesktop = useMediaQuery(`(min-width: ${SMALL_DESKTOP_BREAKPOINT})`);
+  const isLargeDesktop = useMediaQuery(`(min-width: ${LARGE_DESKTOP_BREAKPOINT})`);
 
   const determineWidth = () => {
-    if (isLargeDesktop) return LARGE_DESKTOP_WIDTH;
-    if (isSmallDesktop) return SMALL_DESKTOP_WIDTH; 
+    if (isLargeDesktop) return LARGE_DESKTOP_CONTAINER;
+    if (isSmallDesktop) return SMALL_DESKTOP_CONTAINER; 
     return "auto";
   }
 
