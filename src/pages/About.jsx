@@ -13,8 +13,8 @@ const About = () => {
         <SubHeading text="Hi there I'm Jisan."/>
         <SubHeading text="What I love doing most is solving business problems by implementing simple, friendly user interfaces."/>
       </div>
-      <Link to="/projects">
-        <Button text="See my work">
+      <Link to="/experience">
+        <Button text="My Experience">
           <IoMdArrowRoundForward className='text-xl lg:text-2xl xl:text-3xl' style={{
             marginTop: "1px",
           }}/>
