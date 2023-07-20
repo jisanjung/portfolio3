@@ -1,8 +1,11 @@
 import React from 'react'
+import Timeline from '../components/experience/Timeline'
 
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <div>
+      <Timeline/>
+    </div>
   )
 }
 
