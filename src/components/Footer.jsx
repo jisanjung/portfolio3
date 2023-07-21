@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { FaLinkedinIn, FaGithub  } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { MY_EMAIL, PARAGRAPH_COLOR } from '../constants';
   
 const Footer = () => {
 
-  const [hasScrollbar, setHasScrollbar] = useState(false);
-  useEffect(() => {
-    setHasScrollbar(document.body.clientHeight + 100 > window.innerHeight);
-  }, []);
-
   return (
-    <footer className={`bottom-0 left-0 right-0 py-6 md:py-8 2xl:py-9 ${!hasScrollbar ? "absolute" : "pt-20"}`}>
+    <footer className="pt-20 pb-6 lg:pt-36 md:pb-8 2xl:pb-9">
         <div className='flex justify-center'>
           <a href='https://www.linkedin.com/in/jisan-jung-33129b179/' target='_blank' rel="noopener noreferrer">
             <FaLinkedinIn className='text-2xl mx-2 relative transition-all hover:-translate-y-1' style={{
