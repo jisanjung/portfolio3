@@ -6,6 +6,7 @@ import Item from '../components/Item';
 import ElementHeading from '../components/ElementHeading';
 import Paragraph from '../components/Paragraph';
 import { TEMPLE_LOGO } from '../constants';
+import SkillList from '../components/experience/SkillList';
 
 const Experience = () => {
   return (
@@ -29,7 +30,8 @@ const Experience = () => {
             </div>
           </Item>
           <Item>
-            <ElementHeading text="Skills"/>
+            <ElementHeading text="Skills" className="mb-4"/>
+            <SkillList/>
           </Item>
         </div>
       </div>
