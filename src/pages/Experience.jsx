@@ -10,7 +10,7 @@ import SkillList from '../components/experience/SkillList';
 
 const Experience = () => {
   return (
-    <div>
+    <section>
       <Heading text="Experience & Skills"/>
       <SubHeading text="Keeping up with modern tech stacks has helped me gain valuable experience." className="my-6"/>
       <div className='flex flex-col md:flex-row mt-16'>
@@ -35,7 +35,7 @@ const Experience = () => {
           </Item>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
