@@ -15,8 +15,8 @@ const Experience = () => {
       <SubHeading text="Keeping up with modern tech stacks has helped me gain valuable experience." className="my-6"/>
       <div className='flex flex-col md:flex-row mt-16'>
         <Timeline className="md:w-1/2 md:mr-4"/>
-        <div className='mt-10 w-full md:w-1/2 md:ml-4 md:mt-0'>
-          <Item className="w-full mb-4">
+        <div className='mt-12 w-full md:w-1/2 md:ml-4 md:mt-0'>
+          <Item className="w-full mb-6">
             <ElementHeading text="Education" className="mb-4"/>
             <div className='flex items-center'>
               <span className='block w-16 h-16 mr-4 rounded-lg'>
