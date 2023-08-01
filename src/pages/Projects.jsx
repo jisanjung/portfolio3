@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <section>
       <Heading text="Featured Projects"/>
-      <SubHeading text="A list of projects that were done for clients as well as personal ones." className="my-6"/>
+      <SubHeading text="A list of projects that were done for clients as well as personal ones." className="my-6 mb-8 md:mb-10"/>
       <Project 
         imgSrc={joos} 
         title="Joo's" 
