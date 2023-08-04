@@ -15,8 +15,8 @@ const Projects = () => {
       <Project 
         imgSrc={joos} 
         title="Joo's" 
-        about="A client project that was built to promote a local sandwich shop. Built with HTML, SASS, and JavaScript."
-        liveURL="https://jisanjung.github.io/Joos/"
+        about="A client template project that was built to promote a local sandwich shop. Built with HTML, SASS, and JavaScript."
+        liveURL="https://joos.netlify.app/"
         codeURL="https://github.com/jisanjung/Joos"/>
       <Project 
         imgSrc={glitterpolish} 

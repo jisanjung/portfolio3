@@ -23,7 +23,10 @@ const Input = ({ type, placeholder, name, error, className }) => {
             name={name} 
             className={`${determineBorderStyle()} bg-transparent py-3 w-full focus:outline-none ${className}`}
             onFocus={() => setFocused(true)}
-            onBlur={() => setFocused(false)}
+            onBlur={() => {
+                setFocused(false);
+            }}
+            required
         />
     </div>
   )
