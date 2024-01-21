@@ -5,7 +5,7 @@ import SubHeading from "../components/SubHeading";
 import Item from '../components/Item';
 import ElementHeading from '../components/ElementHeading';
 import Paragraph from '../components/Paragraph';
-import { TEMPLE_LOGO } from '../constants';
+import templeLogo from "../assets/temple.png";
 import SkillList from '../components/experience/SkillList';
 
 const Experience = () => {
@@ -20,7 +20,7 @@ const Experience = () => {
             <ElementHeading text="Education" className="mb-4"/>
             <div className='flex items-center'>
               <span className='block w-16 h-16 mr-4 rounded-lg'>
-                <img src={TEMPLE_LOGO} alt='Temple Logo' className='rounded-lg'/>
+                <img src={templeLogo} alt='Temple Logo' className='rounded-lg'/>
               </span>
               <div>
                 <Paragraph text="Temple University"/>

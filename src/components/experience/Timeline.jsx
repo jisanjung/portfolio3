@@ -6,7 +6,7 @@ import { ISLAND_NETWORKS_LOGO, MC3_LOGO, PAYPAL_LOGO } from '../../constants'
 const Timeline = ({ className }) => {
   return (
     <div className={`${className}`}>
-      <Marker text="Software Engineer Intern @ PayPal" subText="May 2021 - Present" imgUrl={PAYPAL_LOGO}/>
+      <Marker text="Software Engineer Intern @ PayPal" subText="May 2021 - August 2023" imgUrl={PAYPAL_LOGO}/>
       <Line/>
       <Marker text="IT Consultant @ Island Networks" subText="Feb 2020 - Dec 2022" imgUrl={ISLAND_NETWORKS_LOGO}/>
       <Line/>
