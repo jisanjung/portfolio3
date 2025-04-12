@@ -19,7 +19,7 @@ const Contact = () => {
             }}/>
             <span className='md:text-lg' style={{
               color: PARAGRAPH_COLOR,
-            }}>jisan.jung@temple.edu</span>
+            }}>jjjung13@gmail.com</span>
           </p>
           <p className='flex items-center'>
             <GrLocationPin className='text-2xl mr-3' style={{
@@ -27,7 +27,7 @@ const Contact = () => {
             }}/>
             <span className='md:text-lg' style={{
               color: PARAGRAPH_COLOR,
-            }}>Philadelphia, PA</span>
+            }}>Austin, TX</span>
           </p>
         </div>
         <div className='md:w-1/2 md:mr-8'>
