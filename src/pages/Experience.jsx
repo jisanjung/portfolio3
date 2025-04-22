@@ -14,7 +14,7 @@ const Experience = () => {
       <Heading text="Experience & Skills"/>
       <SubHeading text="Keeping up with modern tech stacks has helped me gain valuable experience." className="my-6 md:mb-16 lg:mb-20 2xl:mb-22"/>
       <div className='flex flex-col md:flex-row'>
-        <div className='mb-14 w-full md:mb-0 md:w-1/2 md:mr-10 md:mt-0'>
+        <div className='mb-14 w-full md:mb-0 md:w-1/2 md:mr-10 md:mt-0 order-1'>
           <Item className="w-full mb-6">
             <ElementHeading text="Education" className="mb-4"/>
             <div className='flex items-center'>
@@ -33,7 +33,7 @@ const Experience = () => {
             <SkillList/>
           </Item>
         </div>
-        <Timeline className="md:w-1/2 md:mr-4"/>
+        <Timeline className="mt-10 mb-20 md:my-0 md:w-1/2 md:mr-4 md:order-2"/>
       </div>
     </section>
   )
