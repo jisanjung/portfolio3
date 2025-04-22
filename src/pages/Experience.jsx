@@ -33,7 +33,7 @@ const Experience = () => {
             <SkillList/>
           </Item>
         </div>
-        <Timeline className="mt-10 mb-20 md:my-0 md:w-1/2 md:mr-4 md:order-2"/>
+        <Timeline className="my-10 md:my-0 md:w-1/2 md:mr-4 md:order-2"/>
       </div>
     </section>
   )
