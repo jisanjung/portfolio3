@@ -9,7 +9,7 @@ import jobify from "../assets/jobify.png";
 
 const Projects = () => {
   return (
-    <section>
+    <section className='mb-16'>
       <Heading text="Featured Projects"/>
       <SubHeading text="A list of projects that were done for clients as well as personal ones." className="my-6 md:mb-16 lg:mb-20 2xl:mb-22"/>
       <Project 
@@ -21,7 +21,7 @@ const Projects = () => {
       <Project 
         imgSrc={glitterpolish} 
         title="Glitter & Polish" 
-        about="A client project that was built to automate the manual process of customer booking for a nail salon owner. Built with HTML, CSS, JavaScript, PHP, and MySQL."
+        about="A client project that was built to automate the manual process of customer booking for a nail salon owner. Built with HTML, CSS, NodeJS, and Firebase."
         liveURL="https://glitterpolishnails.com/"
         codeURL="https://github.com/jisanjung/Glitter-and-Polish"/>
       <Project 

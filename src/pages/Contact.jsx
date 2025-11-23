@@ -5,14 +5,16 @@ import { HiOutlineMail } from "react-icons/hi";
 import { GrLocationPin } from "react-icons/gr";
 import { DARKER_TEXT_COLOR, PARAGRAPH_COLOR } from '../constants';
 import ContactForm from '../components/contact/ContactForm';
+import SocialLinks from '../components/SocialLinks';
 
 const Contact = () => {
   return (
-    <section>
+    <section className='mb-16'>
       <Heading text="Get in touch"/>
       <SubHeading text="Let's talk." className="my-6"/>
       <div className='flex flex-col md:flex-row-reverse mt-10 md:mt-16'>
         <div className='md:w-1/2 mb-8 md:mb-0 md:ml-8'>
+          <SocialLinks className='mb-4'/>
           <p className='flex items-center mb-2'>
             <HiOutlineMail className='text-2xl mr-3' style={{
               color: DARKER_TEXT_COLOR,

@@ -10,7 +10,7 @@ import SkillList from '../components/experience/SkillList';
 
 const Experience = () => {
   return (
-    <section>
+    <section className='md:mb-16'>
       <Heading text="Experience & Skills"/>
       <SubHeading text="Keeping up with modern tech stacks has helped me gain valuable experience." className="my-6 md:mb-16 lg:mb-20 2xl:mb-22"/>
       <div className='flex flex-col md:flex-row'>

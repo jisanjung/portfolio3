@@ -5,7 +5,6 @@ import { SMALL_DESKTOP_CONTAINER, LARGE_DESKTOP_CONTAINER, BACKGROUND_COLOR, SMA
 import MainNav from './components/MainNav';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import Footer from './components/Footer';
 import Experience from './pages/Experience';
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
           <Route path='/experience' element={<Experience/>}/>
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
-        <Footer/>
       </div>
     </main>
   )

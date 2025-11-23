@@ -5,7 +5,7 @@ const ButtonSmall = ({ type, text, children, full, className }) => {
     <div className={`inline-block relative ${full && "w-full"} ${className}`}>
         <button type={type} className={`bg-purple-600 hover:bg-purple-800 active:bg-purple-800 text-white py-4 px-9 rounded-lg font-semibold relative z-10 active:top-2 active:right-2 ${full && "w-full text-center"}`}>
             <div className={`flex ${full && "justify-center"}`}>
-                <p className='mr-2'>{text}</p>
+                <p>{text}</p>
                 <span className='flex items-center'>{children}</span>
             </div>
         </button>

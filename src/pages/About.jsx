@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section>
+    <section className='mb-16'>
       <Heading text="Software Engineer, Full Stack Developer, UI Enthusiast"/>
       <div className='my-6 lg:my-10 2xl:my-12'>
         <SubHeading text="Hi there I'm Jisan."/>
