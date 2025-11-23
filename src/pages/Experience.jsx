@@ -5,7 +5,7 @@ import SubHeading from "../components/SubHeading";
 import Item from '../components/Item';
 import ElementHeading from '../components/ElementHeading';
 import Paragraph from '../components/Paragraph';
-import templeLogo from "../assets/temple.png";
+import templeLogo from "../assets/temple.webp";
 import SkillList from '../components/experience/SkillList';
 
 const Experience = () => {

@@ -3,9 +3,9 @@ import Heading from '../components/Heading'
 import SubHeading from '../components/SubHeading'
 import Project from '../components/projects/Project'
 
-import joos from "../assets/joos.png";
-import glitterpolish from "../assets/glitterpolish.png";
-import jobify from "../assets/jobify.png";
+import joos from "../assets/joos.webp";
+import glitterpolish from "../assets/glitterpolish.webp";
+import jobify from "../assets/jobify.webp";
 
 const Projects = () => {
   return (

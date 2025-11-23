@@ -10,7 +10,7 @@ export const LARGE_DESKTOP_BREAKPOINT = "1536px";
 
 // misc variables
 export const MY_EMAIL = "jisan.jung@temple.edu";
-export const PAYPAL_LOGO = "https://media.licdn.com/dms/image/C560BAQEEvjF9SDmDfg/company-logo_200_200/0/1657843479528?e=2147483647&v=beta&t=6U5tzfqB1Qdb-Tlw4JQ7OoPJbWgsyNxfKRdRSnbu46U";
+export const PAYPAL_LOGO = "https://media.licdn.com/dms/image/v2/D560BAQGlX0cKdGRk-w/company-logo_200_200/company-logo_200_200/0/1725506319701?e=1765411200&v=beta&t=EMU5GUC8Yowgk0xGwS4_sPA4aQ58qzzo1E6txpVaFmQ";
 export const ISLAND_NETWORKS_LOGO = "https://media.licdn.com/dms/image/C4D0BAQGZjAj6fdyhrg/company-logo_200_200/0/1519891185830?e=2147483647&v=beta&t=8cpJ7RgcKBA7I6UxgAT1sue9tv2CV2BXKs2NwDN-XBs";
 export const MC3_LOGO = "https://media.licdn.com/dms/image/D4E0BAQE9axB5b3fWGg/company-logo_200_200/0/1688562768590?e=2147483647&v=beta&t=G-lSOC9SODdXX9UCdvFi_BU9rPvt23qgxMpDseH_uMI";
 export const FORMSPREE_ID = "xyyoykke";
