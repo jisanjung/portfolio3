@@ -10,7 +10,7 @@ export const LARGE_DESKTOP_BREAKPOINT = "1536px";
 
 // misc variables
 export const MY_EMAIL = "jjjung13@gmail.com";
-export const PAYPAL_LOGO = "src/assets/paypal_logo.png";
+export const PAYPAL_LOGO = "/src/assets/paypal_logo.png";
 export const ISLAND_NETWORKS_LOGO = "https://media.licdn.com/dms/image/C4D0BAQGZjAj6fdyhrg/company-logo_200_200/0/1519891185830?e=2147483647&v=beta&t=8cpJ7RgcKBA7I6UxgAT1sue9tv2CV2BXKs2NwDN-XBs";
 export const MC3_LOGO = "https://media.licdn.com/dms/image/D4E0BAQE9axB5b3fWGg/company-logo_200_200/0/1688562768590?e=2147483647&v=beta&t=G-lSOC9SODdXX9UCdvFi_BU9rPvt23qgxMpDseH_uMI";
 export const FORMSPREE_ID = "xyyoykke";
