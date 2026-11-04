@@ -1,31 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { DARKER_TEXT_COLOR } from '../constants';
+import { fieldClassName } from './fieldClassName';
 
-const Input = ({ type, placeholder, name, error, className }) => {
-
-    const [focused, setFocused] = useState(false);
-
-    const determineBorderStyle = () => {
-        if (error) {
-            return "border-b-2 border-red-600";
-        }
-        if (focused) {
-            return "border-b-2 border-purple-600";
-        }
-        return "border-b border-gray-600";
-    }
-
+const Input = ({ type, placeholder, name, label, error, className }) => {
   return (
-    <div>
-        <label htmlFor={name} className='text-sm block font-semibold'>{name}</label>
-        <input 
-            type={type} 
-            placeholder={placeholder} 
-            name={name} 
-            className={`${determineBorderStyle()} bg-transparent py-3 w-full focus:outline-none ${className}`}
-            onFocus={() => setFocused(true)}
-            onBlur={() => {
-                setFocused(false);
-            }}
+    <div className={className}>
+        <label htmlFor={name} className='text-sm block font-semibold mb-1.5' style={{ color: DARKER_TEXT_COLOR }}>{label ?? name}</label>
+        <input
+            id={name}
+            type={type}
+            placeholder={placeholder}
+            name={name}
+            className={fieldClassName(error)}
+            style={{ color: DARKER_TEXT_COLOR }}
             required
         />
     </div>

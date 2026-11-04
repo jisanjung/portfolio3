@@ -1,29 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { DARKER_TEXT_COLOR } from '../constants';
+import { fieldClassName } from './fieldClassName';
 
-const Textbox = ({ placeholder, name, error, className }) => {
-
-    const [focused, setFocused] = useState(false);
-
-    const determineBorderStyle = () => {
-        if (error) {
-            return "border-b-2 border-red-600";
-        }
-        if (focused) {
-            return "border-b-2 border-purple-600";
-        }
-        return "border-b border-gray-600";
-    }
-
+const Textbox = ({ placeholder, name, label, error, className }) => {
   return (
-    <div>
-        <label htmlFor={name} className='text-sm block font-semibold'>{name}</label>
-        <textarea 
-            placeholder={placeholder} 
-            name={name} 
-            className={`${determineBorderStyle()} bg-transparent py-3 w-full focus:outline-none ${className}`}
-            onFocus={() => setFocused(true)}
-            onBlur={() => setFocused(false)}>    
-        </textarea>
+    <div className={className}>
+        <label htmlFor={name} className='text-sm block font-semibold mb-1.5' style={{ color: DARKER_TEXT_COLOR }}>{label ?? name}</label>
+        <textarea
+            id={name}
+            placeholder={placeholder}
+            name={name}
+            rows={5}
+            className={`${fieldClassName(error)} resize-y min-h-[8rem]`}
+            style={{ color: DARKER_TEXT_COLOR }}
+            required
+        ></textarea>
     </div>
   )
 }

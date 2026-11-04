@@ -1,22 +1,17 @@
 import React from 'react'
-import ElementHeading from '../ElementHeading';
-import Paragraph from '../Paragraph';
+import { DARKER_TEXT_COLOR, PARAGRAPH_COLOR } from '../../constants';
 
 const Marker = ({ text, subText, imgUrl }) => {
   return (
-    <div className='flex items-center relative'>
-        <span className='block rounded-full mr-4' style={{
-            minWidth: "3rem",
-            minHeight: "3rem",
+    <div className='flex items-center gap-4'>
+        <span className='flex items-center justify-center w-12 h-12 shrink-0 rounded-full bg-white ring-2 overflow-hidden' style={{
+          '--tw-ring-color': DARKER_TEXT_COLOR,
         }}>
-          {imgUrl && <img src={imgUrl} alt='Company Logo' className='rounded-full object-contain' style={{
-            width: "3rem",
-            height: "3rem",
-        }}/>}
+          {imgUrl && <img src={imgUrl} alt='' className='w-full h-full object-contain'/>}
         </span>
-        <div className='absolute left-16 right-0 top-1/2 -translate-y-1/2'>
-          <ElementHeading text={text}/>
-          <Paragraph text={subText}/>
+        <div>
+          <h3 className='font-bold text-base lg:text-lg leading-tight' style={{ color: DARKER_TEXT_COLOR }}>{text}</h3>
+          <p className='text-sm mt-0.5' style={{ color: PARAGRAPH_COLOR }}>{subText}</p>
         </div>
     </div>
   )
