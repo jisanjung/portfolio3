@@ -10,7 +10,7 @@ import { BsFillDatabaseFill } from "react-icons/bs";
 
 const SkillList = () => {
   return (
-    <div className="flex justify-center items-center flex-wrap mb-4">
+    <div className="flex justify-center items-center flex-wrap">
         <Skill tooltip="React">
           <FaReact/>
         </Skill>

@@ -6,6 +6,7 @@ import MainNav from './components/MainNav';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Experience from './pages/Experience';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
     <main className={`p-4 lg:flex lg:justify-center ${isLargeDesktop && "pt-8"}`} style={{
       backgroundColor: BACKGROUND_COLOR,
     }}>
-      <div style={{
+      <div className={`flex flex-col ${isLargeDesktop ? "min-h-[calc(100vh-3rem)]" : "min-h-[calc(100vh-2rem)]"}`} style={{
         width: determineWidth(),
       }}>
         <MainNav/>
@@ -32,6 +33,7 @@ function App() {
           <Route path='/experience' element={<Experience/>}/>
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
+        <Footer/>
       </div>
     </main>
   )

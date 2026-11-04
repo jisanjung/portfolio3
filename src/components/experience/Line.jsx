@@ -3,11 +3,11 @@ import { DARKER_TEXT_COLOR } from '../../constants';
 
 const Line = ({ inSameCompany }) => {
   return (
-    <div className="relative my-4" style={{
+    <div className="relative my-2" style={{
       width: "3rem",
-      height: `${inSameCompany ? "2rem" : "6rem"}`,
+      height: `${inSameCompany ? "2rem" : "5rem"}`,
     }}>
-      <span className='rounded block absolute w-2 top-0 bottom-0 left-1/2 -translate-x-1/2' style={{
+      <span className='rounded-full block absolute w-1 top-0 bottom-0 left-1/2 -translate-x-1/2' style={{
         backgroundColor: DARKER_TEXT_COLOR,
       }}></span>
     </div>
