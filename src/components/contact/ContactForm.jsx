@@ -16,9 +16,9 @@ const ContactForm = () => {
     }
   return (
     <form onSubmit={handleSubmit} className='space-y-5'>
-        <Input type="text" placeholder="Jane Doe" name="Name"/>
-        <Input type="email" placeholder="jane@example.com" name="Email"/>
-        <Textbox placeholder="What's on your mind?" name="Message"/>
+        <Input type="text" placeholder="Enter your name" name="Name"/>
+        <Input type="email" placeholder="Enter your email address" name="Email"/>
+        <Textbox placeholder="Write your message" name="Message"/>
         <ButtonSmall type="submit" text={state.submitting ? "Sending…" : "Send message"} full={true} disabled={state.submitting} className="mt-2">
           <IoMdArrowRoundForward className='text-lg'/>
         </ButtonSmall>
