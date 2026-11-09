@@ -9,15 +9,6 @@ import jobify from "../assets/jobify.webp";
 
 const PROJECTS = [
   {
-    imgSrc: joos,
-    title: "Joo's",
-    type: "Client",
-    about: "A client template project that was built to promote a local sandwich shop.",
-    tech: ["HTML", "SASS", "JavaScript"],
-    liveURL: "https://joos.netlify.app/",
-    codeURL: "https://github.com/jisanjung/Joos",
-  },
-  {
     imgSrc: glitterpolish,
     title: "Glitter & Polish",
     type: "Client",
@@ -25,6 +16,15 @@ const PROJECTS = [
     tech: ["HTML", "CSS", "NodeJS", "Firebase"],
     liveURL: "https://glitterpolishnails.com/",
     codeURL: "https://github.com/jisanjung/Glitter-and-Polish",
+  },
+  {
+    imgSrc: joos,
+    title: "Joo's",
+    type: "Client",
+    about: "A client template project that was built to promote a local sandwich shop.",
+    tech: ["HTML", "SASS", "JavaScript"],
+    liveURL: "https://joos.netlify.app/",
+    codeURL: "https://github.com/jisanjung/Joos",
   },
   {
     imgSrc: jobify,
