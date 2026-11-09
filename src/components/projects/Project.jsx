@@ -10,7 +10,7 @@ const Project = ({ imgSrc, title, type, about, tech = [], liveURL, codeURL }) =>
         <a href={liveURL} target='_blank' rel="noopener noreferrer" className='block md:w-2/5 shrink-0 overflow-hidden border-b-2 md:border-b-0 md:border-r-2' style={{
           borderColor: DARKER_TEXT_COLOR,
         }}>
-          <img src={imgSrc} alt={`Screenshot of ${title}`} className='w-full h-52 md:h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]'/>
+          <img src={imgSrc} alt={`Screenshot of ${title}`} width={1900} height={940} loading='lazy' decoding='async' className='w-full h-52 md:h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]'/>
         </a>
         <div className='flex flex-col p-5 lg:p-6'>
             <p className='text-xs font-semibold uppercase tracking-wider text-purple-600'>{type} project</p>

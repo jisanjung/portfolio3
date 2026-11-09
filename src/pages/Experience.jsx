@@ -19,7 +19,7 @@ const Experience = () => {
           <Item className="w-full mb-8">
             <ElementHeading text="Education" className="mb-4"/>
             <div className='flex items-center gap-4'>
-              <img src={templeLogo} alt='Temple University logo' className='w-14 h-14 shrink-0 rounded-lg'/>
+              <img src={templeLogo} alt='Temple University logo' width={56} height={56} loading='lazy' decoding='async' className='w-14 h-14 shrink-0 rounded-lg'/>
               <div className='text-sm lg:text-base leading-snug'>
                 <p className='font-semibold' style={{ color: DARKER_TEXT_COLOR }}>BS, Information Science</p>
                 <p style={{ color: PARAGRAPH_COLOR }}>Temple University</p>

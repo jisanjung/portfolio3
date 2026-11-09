@@ -7,17 +7,17 @@ const SocialLinks = ({ className }) => {
 
   return (
     <div className={`flex ${className}`}>
-      <a href='https://www.linkedin.com/in/jisanjung/' target='_blank' rel="noopener noreferrer">
+      <a href='https://www.linkedin.com/in/jisanjung/' target='_blank' rel="noopener noreferrer" aria-label='LinkedIn'>
         <FaLinkedinIn className='text-2xl mr-2 relative transition-all hover:-translate-y-1' style={{
           color: PARAGRAPH_COLOR,
         }}/>
       </a>
-      <a href='https://github.com/jisanjung' target='_blank' rel="noopener noreferrer">
+      <a href='https://github.com/jisanjung' target='_blank' rel="noopener noreferrer" aria-label='GitHub'>
         <FaGithub className='text-2xl mx-2 transition-all hover:-translate-y-1' style={{
           color: PARAGRAPH_COLOR,
         }}/>
       </a>
-      <a href={`mailto:${MY_EMAIL}`} target='_blank' rel="noopener noreferrer">
+      <a href={`mailto:${MY_EMAIL}`} target='_blank' rel="noopener noreferrer" aria-label='Email'>
         <SiGmail className='text-2xl mx-2 transition-all hover:-translate-y-1' style={{
           color: PARAGRAPH_COLOR,
         }}/>

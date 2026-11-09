@@ -7,7 +7,7 @@ const Marker = ({ text, subText, imgUrl }) => {
         <span className='flex items-center justify-center w-12 h-12 shrink-0 rounded-full bg-white ring-2 overflow-hidden' style={{
           '--tw-ring-color': DARKER_TEXT_COLOR,
         }}>
-          {imgUrl && <img src={imgUrl} alt='' className='w-full h-full object-contain'/>}
+          {imgUrl && <img src={imgUrl} alt='' width={48} height={48} loading='lazy' decoding='async' className='w-full h-full object-contain'/>}
         </span>
         <div>
           <h3 className='font-bold text-base lg:text-lg leading-tight' style={{ color: DARKER_TEXT_COLOR }}>{text}</h3>

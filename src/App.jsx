@@ -1,12 +1,14 @@
+import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import { useMediaQuery } from './hooks/useMediaQuery';
 import { SMALL_DESKTOP_CONTAINER, LARGE_DESKTOP_CONTAINER, BACKGROUND_COLOR, SMALL_DESKTOP_BREAKPOINT, LARGE_DESKTOP_BREAKPOINT } from './constants';
 import MainNav from './components/MainNav';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import Experience from './pages/Experience';
 import Footer from './components/Footer';
+
+const Projects = lazy(() => import('./pages/Projects'));
+const Experience = lazy(() => import('./pages/Experience'));
+const Contact = lazy(() => import('./pages/Contact'));
 
 function App() {
 
@@ -27,12 +29,14 @@ function App() {
         width: determineWidth(),
       }}>
         <MainNav/>
+        <Suspense fallback={null}>
         <Routes>
           <Route path='/' element={<About/>}/>
           <Route path='/projects' element={<Projects/>}/>
           <Route path='/experience' element={<Experience/>}/>
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
+        </Suspense>
         <Footer/>
       </div>
     </main>
